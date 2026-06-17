@@ -1,2 +1,4 @@
 flask==2.3.3
 chatterbot==1.2.13
+PyYAML
+spacy
