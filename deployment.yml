@@ -15,7 +15,7 @@ spec:
       containers:
         - name: flask-chatbot
           image: flask-chatbot:latest
-          imagepullpolicy: Never
+          imagePullPolicy: Never
           ports:
             - containerPort: 5000
 
