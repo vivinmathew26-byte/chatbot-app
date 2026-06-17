@@ -32,7 +32,7 @@ pipeline {
         stage('Expose App') {
             steps {
                 sh 'pkill -f "kubectl port-forward" || true'
-                sh 'nohup /usr/local/bin/kubectl port-forward svc/flask-chatbot-service 8081:80 --address=0.0.0.0 &'
+                sh 'nohup /usr/local/bin/kubectl port-forward svc/flask-chatbot-service 8082:80 --address=0.0.0.0 &'
             }
         }
     }
