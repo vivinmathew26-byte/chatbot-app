@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deploy to Kubernetes') {
             steps {
-                sh '/usr/local/bin/kubectl apply -f deployment.yaml'
+                sh '/usr/local/bin/kubectl apply -f deployment.yml'
                 sh '/usr/local/bin/kubectl rollout restart deployment flask-chatbot-deployment'
             }
         }
