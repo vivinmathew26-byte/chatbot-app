@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/vivinmathew26-byte/flask-chatbot.git'
+                    url: 'https://github.com/vivinmathew26-byte/chatbot-app.git'
             }
         }
         stage('Build Docker Image') {
