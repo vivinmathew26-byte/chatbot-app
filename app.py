@@ -27,4 +27,4 @@ def get_bot_response():
     return str(englishBot.get_response(userText))
 
 if __name__ == "__main__":  # FIX: was _name_ and "_main_"
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
